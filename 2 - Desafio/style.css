@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#vportContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 10px 20px;
+
+    /* Spans com icones */
+    .cIcons{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    /* Barra de pesquisa */
+    span{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        #searchBar{
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #CCCCCC;
+            background-color: #FFFFFF;
+        }
+        #iconLupa{
+            width: 40px;
+            height: 40px;
+    
+            border: 1px solid #CCCCCC;
+            border-left: 0px;
+            background-color: #FFFFFF;
+        }    
+    }
+
+    /* Imagem de perfil */
+    #perfilImage{
+        width: 34px;
+        height: 34px;
+        border-radius: 50px;
+    }
+}
+
+/** Main */
+main{
+    width: 100%;
+
+    #vBox{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        width: 60%;
+
+        position: absolute;
+        top: 61px;
+        left: 75px;
+
+        #VidThumb{
+            width: 100%;
+            height: 500px; 
+        }
+
+        #vTitle{
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #SequenceBar{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            flex-wrap: wrap;
+            
+            #channelNS{
+                display: flex;
+                flex-direction: row;
+
+                #ChannelIMG{
+                    width: 42px;
+                }
+                span{
+                    font-family: Arial;
+                    padding: 0px 0px 0px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    #channelName{
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    #Subscrites{
+                        font-weight: 400px;
+                        font-size: 14px;
+                        color: #515151;
+                    }
+                }
+            }
+            
+            #InscritButton{
+                width: 127px;
+            }
+
+            .iconSBar{
+                display: flex;
+                gap: 6px;
+                align-items: center;
+                flex-direction: row;
+
+                font-family: Arial;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        #ViewsDate{
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        #Description{
+            font-family: Arial;
+            color: #515151;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+aside{
+    position: absolute;
+    left: 930px;
+    top: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 1000px;
+
+    .VideoCard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0px 10px;
+
+        #BoxText{
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            .AsideTitle{
+                font-family: Arial;
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .AsideChannelName{
+                font-family: Arial;
+                font-weight: 400;
+                font-size: 12px;
+                color: #515151;
+            }
+            .AsideViews{
+                font-family: Arial;
+                font-weight: 400;
+                font-size: 12px;
+                color: #515151;
+            }
+        }
+    }
+}
